@@ -1,3 +1,3 @@
-# kokoa clone 2022
+meme maker
 
-HTML & CSS got so much better
+옛날스타일 그림판을 만들었습니다 ㅎ;;;;;

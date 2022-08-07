@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<article class="main-canvas-component">
+
+    <!--캔버스 상단  저장 로드 -->
+    <section class="canvas-load-save-component">
+
+        <div class="canvas-load-save">
+
+            <button id = "save-btn">
+                Save
+            </button>
+
+            <label for="img-file" class="lable-button">
+                Add Photo
+                <input type="file" accept="image/*" id="img-file">
+            </label>
+            
+        </div>
+
+        <div>
+            <!--중간 맞추기 빈 div-->
+        </div>
+
+        <div class="canvas-load-save__icons">
+
+            <a href="https://nomadcoders.co/"><i class="fas fa-question"></i></a>
+            <i class="fas fa-times" id="window-close"></i>
+
+        </div>
+
+    </section>
+
+    <!--캔버스 중단  그림 그리기 도구 -->
+    <section class="canvas-tools">
+
+        <!--컬러 팔레트-->
+        <div class="canvas-tools__colors">
+            <!--기본 컬러 팔레트 5개씩 2줄-->
+            <div class="canvas-tools__color-default">
+                <div id="color-palette">
+                
+                    <div class = "color-option" style= "background-color: #1abc9c;" data-color="#1abc9c" ></div>
+                    <div class = "color-option" style= "background-color: #3498db;" data-color="#3498db" ></div>
+                    <div class = "color-option" style= "background-color: #34495e;" data-color="#34495e" ></div>
+                    <div class = "color-option" style= "background-color: #27ae60;" data-color="#27ae60" ></div>
+                    <div class = "color-option" style= "background-color: #8e44ad;" data-color="#8e44ad" ></div>
+                    <div class = "color-option" style= "background-color: #f1c40f;" data-color="#f1c40f" ></div>
+                    <div class = "color-option" style= "background-color: #e74c3c;" data-color="#e74c3c" ></div>
+                    <div class = "color-option" style= "background-color: #95a5a6;" data-color="#95a5a6" ></div>
+                    <div class = "color-option" style= "background-color: #d35400;" data-color="#d35400" ></div>
+                    <div class = "color-option" style= "background-color: #bdc3c7;" data-color="#bdc3c7" ></div>
+                    <div class = "color-option" style= "background-color: #2ecc71;" data-color="#2ecc71" ></div>
+                    <div class = "color-option" style= "background-color: #e67e22;" data-color="#e67e22" ></div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!--인풋 컬러-->
+        <div class="canvas-tools__color-input">
+
+        <label for = line-width class="line-width_input">
+            <input 
+                id = "line-width" 
+                type = "range" 
+                min = "1" 
+                max = "10" 
+                value = "5"
+                step = ".1">
+        </label>
+
+        <label for="color">          
+            <input 
+                type = "color" 
+                id = "color">
+        </label>                     
+        
+        </div>
+
+        <!--편집 도구-->
+        <div class="canvas-tools__editor">
+            <button id = "mode-btn">
+                Fill
+            </button>
+        
+            <button id = "destory-btn">
+                Destroy
+            </button>
+        
+            <button id = "eraser-btn">
+                Eraser
+            </button>
+        </div>
+        
+        <!--텍스트 편집 도구-->
+        <div class="canvas-tools__font__editor">
+
+           <label for="font-size">
+                <input 
+                id = "font-size" 
+                type = "range" 
+                min = "1" 
+                max = "10" 
+                value = "5"
+                step = ".1">
+            </label>
+
+            <button id = "text-mode-btn">
+                Fill Text
+            </button>
+            
+            <label for ="input-text">
+                <input type="text" placeholder="Add Text here" id="input-text">
+            </label>
+            
+
+        </div>
+
+    </section>
+
+    <canvas id="cnavas-paper"></canvas>
+
+</article>
+    
+
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+</body>
+</html>

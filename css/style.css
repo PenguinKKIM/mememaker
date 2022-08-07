@@ -1,0 +1,42 @@
+@import "reset.css";
+
+
+@import "component/canvas.css";
+@import "component/saveload.css";
+@import "component/editor.css";
+
+
+
+
+/**폰트 스타일 : 마비옛체 BY 넥슨 게임즈**/
+
+@font-face {
+    font-family: 'MabinogiClassicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/MabinogiClassicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MabinogiClassicR';
+}
+
+.main-canvas-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 900px;
+    border: 2px solid lightgray;
+    background-color: #c2bfc2;
+    border: 5px outset lightblue;
+}
+
+button, label{
+    all:unset;
+}

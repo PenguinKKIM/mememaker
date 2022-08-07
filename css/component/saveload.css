@@ -1,0 +1,56 @@
+.canvas-load-save-component{
+    width: 95%;
+    height: 50px;
+    border: 2px solid lightgray;
+    margin: 2% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00027e;
+}
+.canvas-load-save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input#img-file{   
+    display: none;
+}
+
+.canvas-load-save>button, .lable-button{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: cadetblue;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border: 2px outset white;
+    margin: 1px 0 0 10px;
+}
+
+.lable-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.canvas-load-save__icons{
+    display: flex;
+    align-items: center;
+}
+.canvas-load-save__icons>i,a{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: cadetblue;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border: 2px outset white;
+    margin: 1px 10px 0 10px;
+}
